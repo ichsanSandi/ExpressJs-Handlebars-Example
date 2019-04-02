@@ -9,9 +9,9 @@ app.set('view engine', 'handlebars');
 app.get('/', function (req, res) {
     res.render('home');
 });
-app.get('/anggota', function (req, res) {
-    res.render('anggota');
-})
+// app.get('/anggota', function (req, res) {
+//     res.render('anggota');
+// })
 
 app.get('/:name', function (req, res) {
     if (req.params.name == 'arya') {

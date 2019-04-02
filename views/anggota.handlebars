@@ -1,5 +1,5 @@
-<h1>
-    Biodata Arya Wiranata
+{{!-- <h1>
+    Biodata {{name}}
 </h1>
 <br>
 <br>
@@ -7,4 +7,30 @@
 <p>NRP: {{nrp}}</p>
 <br>
 <br>
-<a class="btn btn-primary" href="/">Kembali</a>
+<a class="btn btn-primary" href="/">Kembali</a> --}}
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <br>
+    <div class="fadeIn first">
+      <h1>Biodata {{name}}</h1>
+    </div>
+    <br>
+    <table class="table">
+    <tbody>
+        <tr>
+          <th>Name</th>
+            <td>{{name}}</td>
+        </tr>
+        <tr>
+          <th>NRP</th>
+            <td>{{nrp}}</td>
+        </tr>
+    </tbody>
+</table>
+    <div id="formFooter">
+      <br>
+      <a class="btn btn-primary" href="/">Kembali</a>
+    </div>
+  </div>
+</div>
