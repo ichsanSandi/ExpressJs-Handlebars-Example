@@ -17,4 +17,4 @@ Implementasi ExpressJs dan Express-Handlebars Template Engine.
 4. run ``` node app.js ```
 5. Buka browser anda jalankan http://localhost:3000/
 
-![hasil](hasil.png "hasil")
+![hasil](./hasil.PNG "hasil")
