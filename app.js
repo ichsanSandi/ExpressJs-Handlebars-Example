@@ -9,15 +9,11 @@ app.set('view engine', 'handlebars');
 app.get('/', function (req, res) {
     res.render('home');
 });
-app.get('/:name', function (req, res) {
-    res.render(req.params.name);
-});
-
 app.get('/anggota', function (req, res) {
     res.render('anggota');
 })
 
-app.get('/anggota/:name', function (req, res) {
+app.get('/:name', function (req, res) {
     if (req.params.name == 'arya') {
         var templateData = {
             name: "Arya Wiranata",
@@ -34,7 +30,7 @@ app.get('/anggota/:name', function (req, res) {
             nrp: "05111540007005"
         }
     }
-    res.render('data', templateData);
+    res.render('anggota', templateData);
 })
 
 app.listen(3000, function (req, res) {
